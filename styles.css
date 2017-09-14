@@ -1,0 +1,45 @@
+/*GLOBAL*/
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	position: relative;
+}
+.range {
+	padding: 20px;
+	box-sizing: border-box;
+	width: 20%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.8);
+	float: left;
+}
+#graph {
+	width: 80%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.4);
+	float: left;
+}
+svg#d3-svg {
+	padding-left: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+#primeTable {
+	width: 100%;
+}
+#primeTable tr:nth-child(even) {
+	background-color: #e6e6fa;
+}
+.xAxis .tick text, .yAxis .tick text {
+	font-size: 12px;
+}

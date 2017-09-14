@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graph the Primes</title>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="d3.js"></script>
+	<script type="text/javascript" src="primes.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="range">
+			<h1>Graph the Primes</h1>
+			<h3>Enter a range</h3>
+			<form id="range" onsubmit="findPrimes(this); return false;">
+				Find and Sum all primes up to:
+				<input type="number" name="end" value="10000" id="endValue">
+				
+				<!-- <input type="submit" name="submit" value="Graph"> -->
+			</form>
+			<button onclick="reset()">Reset</button>
+			<button onclick="findPrimes()" id="playerStart">Graph</button>
+			<button onclick="pause()" id="playerToggle">Pause</button>
+			<div style="overflow: scroll; height: 600px;">
+				<table id="primeTable">
+					<tr>
+						<th>Prime</th>
+						<th>Sum</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="graph"></div>
+	</div>
+</body>
+</html>
